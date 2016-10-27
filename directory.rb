@@ -13,6 +13,7 @@ puts "The Joker"
 puts "Joffrey Baratheon"
 puts "Norman Bates"
 # finally we print the total number of students
+# now I'm checking why previous 'Student count added' commit didnt't appear on Github
 print "Overall, we have "
 #it's important that print() doesn't add new line characters
 print 11
