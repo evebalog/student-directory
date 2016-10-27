@@ -14,11 +14,22 @@ students = [
   "Norman Bates"
 ]
 # and then print them
-puts "The students of Villains Academy"
-puts "-------------"
-students.each do |student|
-  puts student
+def print_header
+  puts "The students of Villains Academy"
+  puts "-------------"
 end
-# finally we print the total number of students # now I'm checking why previous 'Student count added' commit didnt't appear on Github
-puts "Overall, we have #{students.count} great students"
+
+def print(names)
+  names.each do |name|
+  puts name
+  end
+end
+# finally we write a method to print the total number of students # now I'm checking why previous 'Student count added' commit didnt't appear on Github
+def print_footer(names)
+  puts "Overall, we have #{names.count} great students"
+end
 #it's important that print() doesn't add new line characters
+#nothing happens until we call the methods
+print_header
+print(students)
+print_footer(students)
